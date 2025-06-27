@@ -88,3 +88,6 @@ POST /reviews/ - Create a new review
 GET /reviews/{review_id}/ - Retrieve a specific review
 PUT /reviews/{review_id}/ - Update a specific review
 DELETE /reviews/{review_id}/ - Delete a specific review
+
+CI/CR pipeline
+It is a set of automated processes that allow software development teams to build, test, and deploy code more efficiently and reliably.
