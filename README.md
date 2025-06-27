@@ -91,3 +91,30 @@ DELETE /reviews/{review_id}/ - Delete a specific review
 
 CI/CR pipeline
 It is a set of automated processes that allow software development teams to build, test, and deploy code more efficiently and reliably.
+
+API Security
+1. Authentication
+Authentication verifies the identity of the client or user making the API request.
+
+Common Methods:
+
+API Keys: Simple tokens passed in the request header or URL.
+OAuth 2.0: A robust framework for delegated access using access tokens.
+JWT (JSON Web Tokens): Encodes user identity and claims in a signed token.
+Mutual TLS (mTLS): Both client and server authenticate each other using certificates.
+2. Authorization
+Authorization determines what actions or resources an authenticated user is allowed to access.
+
+Common Techniques:
+
+Role-Based Access Control (RBAC): Permissions are assigned based on user roles (e.g., admin, user).
+Attribute-Based Access Control (ABAC): Access is granted based on attributes (e.g., department, location).
+Scopes in OAuth: Define what parts of the API a token can access.
+3. Rate Limiting & Throttling
+These mechanisms control how many requests a client can make to an API in a given time period, helping to prevent abuse and denial-of-service (DoS) attacks.
+
+Common Strategies:
+
+Fixed Window: Limits requests per fixed time window (e.g., 1000 requests/hour).
+Sliding Window Log: Tracks request timestamps for more accurate limiting.
+Token Bucket / Leaky Bucket: Allows bursts of traffic while maintaining a steady average rate.
